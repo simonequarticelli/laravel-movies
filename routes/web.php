@@ -10,5 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function(){
+  return redirect()->route('movies.index');
+});
 
 Route::resource('/movies', 'MovieController');
